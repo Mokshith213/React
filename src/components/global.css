@@ -1,0 +1,36 @@
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    /* background-color: rgb(251, 251, 251); */
+    /* background-color: #ECF2FF; */
+    background-image: url(https://wallpaperaccess.com/full/2314950.jpg);
+    background-position: 100%;
+  }
+
+  .sdiv{
+    
+    height: 500px;
+    width: 400px;
+    border: 2px solid rgb(244, 235, 235);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: 650px;
+    background-color: aliceblue;
+  }
+  .ldiv{
+    height: 300px;
+    width: 400px;
+    border: 2px solid rgb(244, 235, 235);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 750px;
+    background-color: aliceblue;
+  }
+  .himg{
+
+    width: 75%;
+    height: 70%;
+    box-sizing: border-box;
+    background-position: center;
+  }

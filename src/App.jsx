@@ -1,37 +1,25 @@
+import React from 'react'
+import Signup from "./components/Signup.jsx"
+import Login from "./components/Login.jsx"
+import Home from "./components/Home.jsx"
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./components/global.css";
+import { BrowserRouter as Router, Routes , Route } from 'react-router-dom';
 
-import React, { Component } from 'react'
 
-export default class App extends Component {
-  componentDidMount()
-  {
-    let btn=document.querySelector('form')
 
-    btn.addEventListener("click",(e)=>
-    {
-        e.preventDefault()
-        let username=document.getElementById("name").value
-        let password=document.getElementById("password").value
-        console.log({username , password});
-    })
-  }
-  
-    render() {
-    return (
-      <div>
-        <form action="">
+const App = () => {
+  return (
+   <Router>
+        <Routes>
+            <Route path='/' element={<Signup/>} />
+            <Route path='/login' element={<Login/>} />
+            <Route path='/home' element={<Home/>}/>
+        </Routes>
 
-            <label htmlFor="">name:</label>
-            <br />
-            <input type="text" id="name" />
-            <br />
-            <label htmlFor="">password:</label>
-            <br />
-            <input type="text" id='password' />
-            <br />
-            <button>Submit</button>
-        </form>
-   
-      </div>
-    )
-  }
+   </Router>
+  )
 }
+
+export default App
